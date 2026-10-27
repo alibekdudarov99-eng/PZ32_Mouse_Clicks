@@ -1,37 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Лаборатория кликов</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js" defer></script>
-  </head>
-  <body>
-    <main class="shell">
-      <header class="topline"></header>
-      <div class="grid">
-        <section class="panel">
-          <h2>Одинарный клик</h2>
-          <p class="muted">Каждое нажатие добавляет один балл.</p>
-          <div id="score" class="stat">0</div>
-          <button id="score-button" class="btn primary">Добавить балл</button>
-        </section>
-        <section class="panel">
-          <h2>Двойной клик</h2>
-          <p class="muted">Дважды нажмите на карточку.</p>
-          <button id="double-card" class="tile" type="button">
-            Двойной щелчок меняет меня
-          </button>
-        </section>
-        <section class="panel wide">
-          <h2>Наведение мыши</h2>
-          <div id="hover-zone" class="hover-zone">Наведите сюда курсор</div>
-          <p id="status" class="status" aria-live="polite">
-            Ожидание действия.
-          </p>
-        </section>
-      </div>
-    </main>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа</title>
+</head>
+<body>
+    <div>Очки: <span id="score" class="score">0</span></div>
+    <br>
+    <button id="score-button" class="score-button">Нажми меня (Клик)</button>
+    <br><br>
+    <div id="double-card" class="double-card" style="border: 1px solid black; padding: 10px; display: inline-block; cursor: pointer;">
+        Карточка игры (Двойной клик)
+    </div>
+    <br><br>
+    <div id="hover-zone" class="hover-zone" style="border: 1px solid gray; padding: 20px; display: inline-block;">
+        Зона для наведения мыши
+    </div>
+    <br><br>
+    <div id="status" class="status">Статус программы готов к работе</div>
+    <script src="js/script.js"></script>
+</body>
 </html>
